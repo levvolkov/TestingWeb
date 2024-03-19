@@ -37,3 +37,15 @@ public class OrderCardTest {
         driver = null;
     }
 
+    @Test
+    void shouldPositiveTest() {
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Семенов Семен");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79774620014");
+        driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
+        driver.findElement(By.cssSelector("button")).click();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+
+    }
+
+}
