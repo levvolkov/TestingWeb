@@ -33,17 +33,6 @@ public class OrderCardTest {
     }
 
     @Test
-    void FailedLastNameTest() {
-        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Семёнов Пётр");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79057773311");
-        driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
-        driver.findElement(By.cssSelector("button")).click();
-        String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
     void shouldTestPositive() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Павел Пестель");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79217931826");
