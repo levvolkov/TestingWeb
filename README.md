@@ -1,3 +1,4 @@
+[![Java CI with Gradle](https://github.com/LevVolkov/TestingWeb/actions/workflows/gradle.yml/badge.svg)](https://github.com/LevVolkov/TestingWeb/actions/workflows/gradle.yml)
 [![Build status](https://ci.appveyor.com/api/projects/status/6vixklr4y47knu2b?svg=true)](https://ci.appveyor.com/project/LevVolkov/testingweb)
 
 # 3. Домашнее задание к занятию «2.1. Тестирование веб-интерфейсов»
